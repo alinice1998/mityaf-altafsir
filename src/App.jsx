@@ -838,7 +838,7 @@ export default function App() {
       </main>
 
       <footer className="site-footer">
-        مطياف التفسير — مثال عملي مفتوح المصدر على نماذج اتخاذ القرار (Gemini Decision 1)
+        مطياف التفسير — قراءة أبعاد التفسير والمحتوى القرآني وترشيح الأنسب
       </footer>
 
       <ApiKeyModal

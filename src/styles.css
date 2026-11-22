@@ -139,7 +139,7 @@ a {
   white-space: nowrap;
 }
 
-.mode-tab:hover {
+.mode-tab:hover:not(.mode-tab-active) {
   color: var(--ink);
 }
 
@@ -873,7 +873,7 @@ a {
   transition: all 0.16s ease;
 }
 
-.focus-pill:hover {
+.focus-pill:hover:not(.focus-pill-active) {
   border-color: var(--primary);
   color: var(--primary);
 }
@@ -883,6 +883,12 @@ a {
   border-color: var(--primary);
   color: #FFFFFF;
   font-weight: 600;
+}
+
+.focus-pill-active:hover {
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
+  color: #FFFFFF;
 }
 
 .checks-row {

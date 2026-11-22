@@ -1,0 +1,14 @@
+services:
+  mityaf-altafsir:
+    build: .
+    container_name: mityaf-altafsir
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3108:3000"
+    env_file:
+      - .env
+    volumes:
+      - mityaf_cache:/app/data/cache
+
+volumes:
+  mityaf_cache:
